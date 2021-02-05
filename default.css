@@ -57,6 +57,11 @@ h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 16px;}
 
+.post-link{
+	text-decoration: underline;
+	padding-right: 3px;
+}
+
 .s1{
 	background-color: var(--mainColor);
 	border-bottom:1px solid var(--borderColor);
@@ -312,6 +317,11 @@ h6 { font-size: 16px;}
 	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	cursor: pointer
+}
+
+.post:hover{
+	transform: scale(1.1);
 }
 
 .thumbnail{
@@ -376,6 +386,7 @@ h6 { font-size: 16px;}
 	color: #fff;
 	background-color: var(--buttonColor);
 	border:none;
+	cursor: pointer;
 }
 
 

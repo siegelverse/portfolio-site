@@ -36,12 +36,13 @@
 
 					<ul id="navigation">
 						<li><a href="index.html#contact">Contact</a></li>
-
+						<li><a href="marcus-siegel-dev-resume.pdf">Resume</a></li>
+						<li><a href="index.html#projects">Projects</a></li>
 					</ul>
 				</div>
 
 				<div class="left-column">
-					<img id="profile_pic" src="images/Dennis.jpg">
+					<img id="profile_pic" src="images/marcus.jpg">
 					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
 					<div id="theme-options-wrapper">
@@ -63,7 +64,7 @@
 							<h3>What I Do</h3>
 							<p>
                                 I am a Software Engineer who combines a passion for design and creativity 
-                                to craft beautifully designed front end components and web applications.
+                                to craft beautifully designed frontend components and web applications.
                             </p>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
@@ -83,7 +84,7 @@
 
 					<p>
                         Having recently completed the intensive Software Engineering program at Flatiron, 
-                        I am ready to implement and maintain the next generation of your organization’s front-end 
+                        I am ready to implement and maintain the next generation of your organization’s frontend 
                         platform using my knowledge of domain-driven design, React, JavaScript, and best practices in software/web development, 
                         API design, and testing.
                     </p>
@@ -98,7 +99,7 @@
 
 					<h4>TOP EXPERTISE</h4>
 
-					<p>Fullstack developer with primary focus on React + Node: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+					<p>Fullstack developer with a primary focus on React + Node:</p>
 
 					<div id="skills">
 						<ul>
@@ -113,7 +114,7 @@
 							<li>CI/CD Pipelines</li>
 							<li>MongoDB</li>
 							<li>AWS (RDS/S3)</li>
-							<li>Heroku</li>
+							<li>SASS</li>
 							<li>HTML/CSS</li>
 						</ul>
 
@@ -123,7 +124,7 @@
 
 				
 				<div class="social-links">
-					<img id="social_img" src="images/github-photo.png">
+					<img id="social_img" src="images/linkedin-photo.png">
 					<h3>Find me on LinkedIn & GitHub</h3>
 
 					<a target="_blank" href="https://www.linkedin.com/in/marcus-siegel-dev/">LinkedIn</a>
@@ -137,39 +138,58 @@
 
 	<section class="s1">
 		<div class="main-container">
+			<a name="projects"></a>
 			<h3 style="text-align: center;">Some of my past projects</h3>
 
 			<div class="post-wrapper">
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="images/dash.jpg">
+						<img class="thumbnail" src="images/santo.png">
 						<div class="post-preview">
-							<h6 class="post-title">Laboratory Management System</h6>
-							<p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
-							<a href="post.html">Read More</a>
+							<h6 class="post-title">Archivo del Santo</h6>
+							<p class="post-intro">
+								A MERN stack streaming platform for the films of Luchador El Santo. 
+								<br>
+								<br>
+								React, Styled Components, CSS/SASS, Node, Express, MongoDB
+							</p>
+							<a href="https://archivo-del-santo.herokuapp.com/" class='post-link'>Live Demo</a>
+							<a href="https://github.com/siegelverse/archivo-del-santo" class='post-link'>Github</a>
 						</div>
 					</div>
 				</div>
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="images/ecom.jpg">
+						<img class="thumbnail" src="images/hey-weather.png">
 						<div class="post-preview">
-							<h6 class="post-title">Online Store - CoursePost Title</h6>
-							<p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
-							<a href="post.html">Read More</a>
+							<h6 class="post-title">Hey, Weather</h6>
+							<p class="post-intro">
+								A Node application for viewing the weather made as a project for test API iteration.
+								<br>
+								<br>
+								JavaScript, Node, Express, Handlbars, CSS/SASS, HTML 
+							</p>
+							<a href="https://hey-weather-app.herokuapp.com/" class='post-link'>Live Demo</a>
+							<a href="https://github.com/siegelverse/node-weather-app" class='post-link'>Github</a>
 						</div>
 					</div>
 				</div>
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="images/membership site.jpg">
+						<img class="thumbnail" src="images/storitale.png">
 						<div class="post-preview">
-							<h6 class="post-title">Membership Website</h6>
-							<p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-							<a href="post.html">Read More</a>
+							<h6 class="post-title">StoriTale</h6>
+							<p class="post-intro">
+								A story telling platform for sharing interesting stories with friends and followers.
+								<br>
+								<br>
+								React, Redux, Ruby on Rails, PostgreSQL, MaterialUI, CSS
+							</p>
+							<a href="https://www.youtube.com/watch?v=PcXpHnUSOBw&feature=youtu.be" class='post-link'>Live Demo</a>
+							<a href="https://github.com/siegelverse/storitale-frontend" class='post-link'>Github</a>
 						</div>
 					</div>
 				</div>
@@ -183,20 +203,17 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
+			<form id="contact-form" action="https://formspree.io/f/mgepqllj" method="POST">
 				<a name="contact"></a>
 
 				<label>Name</label>
-				<input class="input-field" type="text" name="name">
-
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+				<input class="input-field" type="text" name="name" required>
 
 				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+				<input class="input-field" type="email" name="_replyto" required>
 
 				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
+				<textarea class="input-field" name="message" required></textarea>
 
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
