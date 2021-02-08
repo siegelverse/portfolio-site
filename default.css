@@ -423,4 +423,8 @@ h6 { font-size: 16px;}
 		width: 280px;
 
 	}
+
+	#contact-form{
+		max-width: 400px;
+	}
 }
